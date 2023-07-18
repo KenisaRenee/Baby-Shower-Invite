@@ -205,7 +205,7 @@ p {
     nav ul li {
         font-size: 2rem;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin: 0 2rem -2rem 2rem;
     }
 
