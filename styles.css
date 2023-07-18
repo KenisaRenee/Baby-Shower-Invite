@@ -1,0 +1,275 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Libre+Baskerville&display=swap');
+
+:root {
+    --green: #383f37dc;
+    --orange: #a1532f;
+    --light-blue: #c0d3ea;
+    --cream: #edf2f1;
+    --brown: #815306;
+    --red: #86282e;
+    --lavender: #564b6c;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1.2px;
+} 
+
+header {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem 10rem 0 10rem;
+    color: var(--orange);
+    font-size: 3.5rem;
+    background-color: transparent;
+    font-family: 'Handlee', cursive;
+    margin-top: 3rem;
+}
+
+nav a {
+    color: var(--gold);
+    text-shadow: 2px 2px var(--brown);
+}
+
+nav a:hover {
+    opacity: .7;
+}
+
+body {
+    background: linear-gradient(0deg, var(--light-blue) 0%, var(--cream) 100%);
+}
+
+section {
+    padding: 0 10rem;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    color: var(--lavender);
+    font-size: 4.5rem;
+    text-shadow: 2px 2px var(--brown);
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: var(--lavender);
+    text-shadow: 2px 2px var(--cream);
+    font-size: 2rem;
+    padding: 1rem 1rem;
+}
+
+p {
+    font-family: 'Libre Baskerville', serif;
+    color: var(--orange);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10rem;
+}
+
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    padding-bottom: 1.5rem;
+}
+
+.hero-description {
+    padding-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.hero-img {
+    background: white;
+    padding: 1.5rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, .3);
+  }
+
+  figcaption {
+    color: var(--brown);
+    font-size: 1.6rem;
+    position: relative;
+    top: 2rem;
+    font-weight: bold;
+    font-family: 'Handlee', cursive;
+    margin-bottom: .5rem;
+  }
+
+  .hero-img img {
+    width: 100rem;
+  }
+
+.two {
+    align-items: center;
+    text-align: center;
+    gap: 10rem;
+}
+
+.two h1 {
+    padding-bottom: 1rem;
+}
+
+.two-img img {
+    border: .2rem solid var(--orange);
+    object-fit: contain;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, .3);
+    max-height: 100vh;
+}
+
+.two-p {
+    padding-bottom: 1rem;
+}
+
+.link {
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    color: var(--cream);
+    padding: 1.2rem 3rem 1rem 3rem;
+    display: block;
+    cursor: pointer;
+    border: 2px solid var(--lavender);
+    margin: 1rem auto 1rem auto;
+    background-color: var(--orange);
+    width: 50%;
+    text-align: center;
+}
+
+.link:hover {
+    transform: scale(1.1);
+    transition: ease-in-out .3s;
+    color: var(--cream);
+    border: 2px solid var(--orange);
+}
+
+.three {
+    display: block;
+    margin: 0 3rem;
+}
+
+.four {
+    display: block;
+    margin: 0 auto;
+}
+
+.family {
+   display: block;
+   object-fit: contain;
+   margin: 3rem auto;
+}
+
+.form {
+    text-align: center;
+    margin-top: 3%;
+}
+
+@media only screen and (max-width: 1200px) {
+    nav ul li {
+        font-size: 2rem;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 2rem -2rem 2rem;
+    }
+
+    nav a {
+        text-shadow: 1.3px 1.3px var(--brown);
+    }
+
+    section {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0 3rem;
+    }
+
+    .hero {
+        gap: 0rem;
+    }
+
+    .hero-img {
+        margin: 3rem 0;
+        padding: 1rem 1rem;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .hero-text p {
+        margin-bottom: 4rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        padding-top: 1rem;
+    }
+
+    .two-img {
+        margin-bottom: 2rem;
+    }
+
+    .three {
+        margin: 0 auto;
+    }
+
+    .link {
+        width: 100%;
+    }
+
+    .form {
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        min-height: max-content;
+        margin: 03% -2rem;
+    }
+}
