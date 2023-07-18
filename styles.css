@@ -211,6 +211,7 @@ p {
 
     nav a {
         text-shadow: 1.3px 1.3px var(--brown);
+        padding: 0 auto;
     }
 
     section {
